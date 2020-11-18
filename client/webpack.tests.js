@@ -9,9 +9,12 @@ var webpack = require("webpack");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var MiniCssExtractPlugin = require("mini-css-extract-plugin");
+var realFs = require('fs')
+var gracefulFs = require('graceful-fs')
 const Dotenv = require('dotenv-webpack');
 const { patchGracefulFileSystem } = require("./webpack.common.js");
 patchGracefulFileSystem();
+gracefulFs.gracefulify(realFs)
 
 var CONFIG = {
     // The tags to include the generated JS and CSS will be automatically injected in the HTML template
