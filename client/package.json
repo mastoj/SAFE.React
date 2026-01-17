@@ -28,7 +28,7 @@
         "@babel/runtime": "^7.7.1",
         "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
         "babel-loader": "^8.0.5",
-        "copy-webpack-plugin": "^6.1.1",
+        "copy-webpack-plugin": "^13.0.1",
         "core-js": "^3.3.6",
         "css-loader": "^5.0.1",
         "dotenv-webpack": "^1.7.0",
